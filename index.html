@@ -9,6 +9,14 @@
     <!-- jquery link below -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    
+    
+        <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
     <!-- css link below -->
     <link href="assets/style.css" type="text/css" rel="stylesheet">
@@ -18,82 +26,238 @@
 </h2>
 
 
-<body>
+<body class = "background">
+
     <!-- start button -->
-    <div class="start"> <span>   </span>
+    <div class="start"> <span> </span>
         <input type="button" value="Press to start">
-        <p id="countdown">timer goes here </p>
-     </div>
+        <p id="countdown">Time Remaining <span id="timer"></span></span> </p>
+        <!-- <a href="#main-content">Skip to main content</a> -->
 
-    <div>
-        <p class="question">
-        1st:  A audi/volkswagen turbo diverter releases  air pressure - internal 
-        </p>
-    </div>
+        <!-- navigation and header content -->
 
-    <div>
-        <p class="question">2nd:
-                a wankel motor is a - rotary</p> 
-    </div>
-
-    <div>
-        <p class="question"> 
-                3rd:
-                whats next - intake, compression, power  - exhaust
-        </p>
-    
-    </div>
-
-    <div>
-        <p class="question">4th:
-                Which car company created the 3point seat belt - volvo </p>
-        
-    </div>
-
-    <div>
-        <p class=" question">  5th:
-                Original hot hatch - volkswagen GTi</p>
-      
-    </div>
-
-    <div>
-        <p class="question"> 6th:
-                Chevy LS engine have how many camshafts - 1  </p>
-       
-    </div>
-
-    <div>
-        <p class="question"> 7th:
-                                how many Spoon engines did Hector plan to bring to Racewars - 3.
-            </p>
-       
-    </div>
-
-    <div>
-        <p class="question"> 8th:
-                The BMW driven by Steve Urkel - Isetta </p>
-        
+        <!-- <main id="main-content"> -->
+        <!-- main page content -->
+        </main>`
 
     </div>
+    <div class="gameQuestion">
+        <div>
+            <div class="question">
+                <!-- q1 -->
+                <h6> A Audi/Volkswagen turbo diverter valve releases air pressure? </h6>
+                <div class="answer">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input"  type="checkbox" name="question1" id="inlineCheckbox1" value="wrong">
+                        <label class="form-check-label1" for="inlineCheckbox1" checked ="checked">externally</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input"  type="checkbox"  name="question1" id="inlineCheckbox1" value="correct">
+                        <label class="form-check-label1" for="inlineCheckbox1">internally</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input"  type="checkbox"  name="question1" id="inlineCheckbox1" value="other">
+                        <label class="form-check-label1" for="inlineCheckbox1">to the cloud</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            
 
-    <div>
-        <p class="question"> 9th:
-                KITT (Knight Industries Two Thousand) - Pontiac Trans Am  </p>
-       
-    </div>
 
-    <div> <p class ="question">
-            10th:
-            First car to have headlights move with steering wheel inputs to help see around turns/curves - Tucker 48
-    </p>
-       
-    </div>
+            <div class="question">
+                <!-- q2 -->
+                <h6> A Wankel motor - </h6>
+                <div class="answer">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input"  type="checkbox" name="question2" id="inlineCheckbox2" value="wrong">
+                        <label class="form-check-label" for="inlineCheckbox2" checked ="checked">is a part for a Tesla</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input"  type="checkbox" name="question2" id="inlineCheckbox2" value="other">
+                        <label class="form-check-label" for="inlineCheckbox2">moves the windows up/down</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input"type="checkbox"  name="question2" id="inlineCheckbox2" value="correct">
+                        <label class="form-check-label" for="inlineCheckbox2">is a rotary engine </label>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="question">
+                <!-- q3 -->
+                <h6>Whats next - intake, compression, power </h6>
+                <div class="answer">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="correct">
+                        <label class="form-check-label" for="inlineCheckbox1">Exhaust</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="wrong">
+                        <label class="form-check-label" for="inlineCheckbox2">Defragment</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="other">
+                        <label class="form-check-label" for="inlineCheckbox3">Bang</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="question">
+                <!-- q4 -->
+                <h6>Which car company created the 3-point seat belt </h6>
+                <div class="answer">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="wrong">
+                        <label class="form-check-label" for="inlineCheckbox1">BMW</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="correct">
+                        <label class="form-check-label" for="inlineCheckbox2">Volvo</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="other">
+                        <label class="form-check-label" for="inlineCheckbox3">Ford</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="question">
+                <!-- q5 -->
+                <h6> The Original hot hatch - </h6>
+                <div class="answer">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="wrong">
+                        <label class="form-check-label" for="inlineCheckbox1">Ford Focus RS</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="other">
+                        <label class="form-check-label" for="inlineCheckbox2">Peugeot GTi 206</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="correct">
+                        <label class="form-check-label" for="inlineCheckbox3">Volkswagen GTi</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="question">
+                <!-- q6 -->
+                <h6>Chevy LS engines have how many camshafts </h6>
+                <div class="answer">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="correct">
+                        <label class="form-check-label" for="inlineCheckbox1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="wrong">
+                        <label class="form-check-label" for="inlineCheckbox2">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="other">
+                        <label class="form-check-label" for="inlineCheckbox3">8 </label>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="question">
+                <!-- q7 -->
+                <h6>
+                    *fill in blank* "Hector is going to be running 3 "___________" with Spoon engines". </h6>
+                <div class="answer">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="wrong">
+                        <label class="form-check-label" for="inlineCheckbox1">Honda Prelude's</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="other">
+                        <label class="form-check-label" for="inlineCheckbox2">Acura Integra's</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="correct">
+                        <label class="form-check-label" for="inlineCheckbox3">Honda Civic's</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="question">
+                <!-- q8 -->
+                <h6>The BMW driven by Steve Urkel was a? </h6>
+                <div class="answer">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="correct">
+                        <label class="form-check-label" for="inlineCheckbox1"> BMW Isetta </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="wrong">
+                        <label class="form-check-label" for="inlineCheckbox2">BMW 2002</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="other">
+                        <label class="form-check-label" for="inlineCheckbox3"> BMW M3 </label>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="question">
+                <!-- q9 -->
+                <h6>KITT (Knight Industries Two Thousand) was what type of vehicle?</h6>
+                <div class="answer">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="correct">
+                        <label class="form-check-label" for="inlineCheckbox1">Pontiac Trans Am</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="wrong">
+                        <label class="form-check-label" for="inlineCheckbox2">Chevy Nova</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="other">
+                        <label class="form-check-label" for="inlineCheckbox3">Buick Regal</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="question">
+                <!-- q10 -->
+                <h6>First car to have headlight move left/right with steering wheel inputs to help see around turns?
+                </h6>
+                <div class="answer">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="correct">
+                        <label class="form-check-label" for="inlineCheckbox1">Tucker 48</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input"  type="checkbox" id="inlineCheckbox2" value="wrong">
+                        <label class="form-check-label" for="inlineCheckbox2">Ford Model T</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="other">
+                        <label class="form-check-label" for="inlineCheckbox3">Delorean </label>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
+<br>
+<br>
 
-
-
-
+ <!-- done and/or to stop timer end game.-->
+ <div class="done"> <span> </span>
+    <input type="button" value="Press to finish">
+    <p id="donebutton"><span id="finish"></span></span> </p>
+    <p id="completed"> Completed!!  </p>
+    <p  id="wins"> Correct answers: </p>
+    <p id="finsihed" id="loses"> Wrong answers: </p>
 
 </body>
 <!-- javascript link below -->
