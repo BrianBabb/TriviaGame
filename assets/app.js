@@ -36,7 +36,7 @@ $(document).ready(function () {
     console.log(timer);
     console.log(number + "test time");
 
-    
+
 
     // // timer test/countdown - stackOV
     //$("#startClock").click( function(){
@@ -94,17 +94,32 @@ function stop() {
     clearInterval(clock);
 }
 // radio button functions & score attempt - 
-$(".option").change(function(){
-  var selected_value = $(this).attr("value");
-   console.log(selected_value);
-correct = $('input[value=correct]:checked').length;
-wrong = $('input[value=wrong]:checked').length;
+$(".option").change(function () {
+    var selected_value = $(this).attr("value");
+    console.log(selected_value);
+    correct = $('input[value=correct]:checked').length;
+    wrong = $('input[value=wrong]:checked').length;
 
-console.log(correct +"w")
-console.log(wrong +"L's");
+    console.log(correct + "w")
+    console.log(wrong + "L's");
 
+    if (correct === 10) {
+        console.log("Winner Winner");
+        alert("winner winner chicken dinner");
+        done;
+    } else if
+        (wrong === 10) {
+        console.log("did you even try");
+        alert(" did you even try");
+    } else if
+        (correct + wrong === 10) {
+        console.log("gg");
+        alert(" game over");
+    }
+}
+  
 
-   });
+);
 
 
 //   $("input[type=radio]").on("change", function () {
@@ -114,18 +129,20 @@ console.log(wrong +"L's");
 //    $("done");
 //    });
 function finalCountdown() {
-    
-        gameTimer--;
-        if (gameTimer >= 0) {
-            span = document.getElementById("timer");
-            span.innerHTML = gameTimer;
-       
+
+    gameTimer--;
+    if (gameTimer >= 0) {
+        span = document.getElementById("timer");
+        span.innerHTML = gameTimer;
+
+
+
         if (gameTimer === 0) {
-            alert('sorry, out of time');
+            alert('sorry, you lose');
             // clearInterval(counter);
         }
-        }
     }
+}
 
 // closer bracket 
 // }
