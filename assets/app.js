@@ -1,3 +1,12 @@
+var correct = 0;
+var wrong = 0;
+var skipped = 0;
+var gameTimer = 45;
+var number = 45;
+var wins = [];
+var loses = [];
+var clock;
+
 // javascript for trivia 
 $(document).ready(function () {
 
@@ -11,13 +20,7 @@ $(document).ready(function () {
 
 
     // score board variables 
-    var correct = 0;
-    var wrong = 0;
-    var skipped = 0;
-    var gameTimer = 0;
-    var number = 45;
-    var wins = [];
-    var loses = [];
+
 
     // start game / unhide questions / start timer 
 
@@ -33,21 +36,11 @@ $(document).ready(function () {
     console.log(timer);
     console.log(number + "test time");
 
+    
 
     // // timer test/countdown - stackOV
     //$("#startClock").click( function(){
-    var gameTimer = 45;
-    setInterval(function () {
-        gameTimer--;
-        if (gameTimer >= 0) {
-            span = document.getElementById("timer");
-            span.innerHTML = gameTimer;
-        }
-        if (gameTimer === 0) {
-            alert('sorry, out of time');
-            // clearInterval(counter);
-        }
-    }, 3000);
+    clock = setInterval(finalCountdown, 1000);
 });
 
 //clicking start 
@@ -69,6 +62,8 @@ $(".start").on("click", function () {
     //   gameQuestion.show;
 
 });
+
+
 
 // function to start on start click. 
 function startGame() {
@@ -96,15 +91,41 @@ $("#countdown").on(function () {
 
 // clear timer. 
 function stop() {
-    clearInterval(finalCountdown);
+    clearInterval(clock);
 }
 // radio button functions & score attempt - 
-// $(".answer").change(function(){
-  // selected_value = $("input[name="question1"]:checked").val();
-   // console.log(question1);
+$(".option").change(function(){
+  var selected_value = $(this).attr("value");
+   console.log(selected_value);
+correct = $('input[value=correct]:checked').length;
+wrong = $('input[value=wrong]:checked').length;
 
+console.log(correct +"w")
+console.log(wrong +"L's");
+
+
+   });
+
+
+//   $("input[type=radio]").on("change", function () {
+//    correct = $("input[value=correct]:checked").length;
+//    wrong = $("input[value=wrong]:checked").length;
+//    skipped = (10 - (correct + wrong));
+//    $("done");
 //    });
-
+function finalCountdown() {
+    
+        gameTimer--;
+        if (gameTimer >= 0) {
+            span = document.getElementById("timer");
+            span.innerHTML = gameTimer;
+       
+        if (gameTimer === 0) {
+            alert('sorry, out of time');
+            // clearInterval(counter);
+        }
+        }
+    }
 
 // closer bracket 
 // }
