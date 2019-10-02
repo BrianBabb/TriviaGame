@@ -1,40 +1,15 @@
 
-/* 
 
-
-h2 {text-align:center;
-    color: green;
+.background {
+  background-image:url("images/stock-photo-speedometer-scoring-high-speed-in-a-fast-motion-blur-racetrack-background-speeding-car-background-1061506127.jpg");
+  background-attachment: fixed;
+  text-align:center;
+  color: rgb(158, 255, 47); 
+  font-size: 30px;
 }
- 
-body {text-align:center;
-    background-image: url("https://www.shutterstock.com/image-photo/speedometer-scoring-high-speed-fast-motion-1061506127");
-  }
-  body {text-align:center;
-    background-image: url ("https://www.shutterstock.com/image-photo/speedometer-scoring-high-speed-fast-motion-1061506127", url("https://www.shutterstock.com/image-photo/speedometer-scoring-high-speed-fast-motion-1061506127");
-    background-repeat: no-repeat, repeat;
-    ;
-  }
-
- h4 {text-align: center;
-color: red;}
-
-div {text-align: center;}
-
-
-*/
 
 h2 {text-align:center;
 }
 div{ text-align:center;
-}
-.body {  
-        background-image: url ("https://www.shutterstock.com/image-photo/speedometer-scoring-high-speed-fast-motion-1061506127", url("https://www.shutterstock.com/image-photo/speedometer-scoring-high-speed-fast-motion-1061506127");
-        background-repeat: no-repeat, repeat;
-        text-align:center;
-    
-}
-.start{
-    background-image: url ("https://www.shutterstock.com/image-photo/speedometer-scoring-high-speed-fast-motion-1061506127", url("https://www.shutterstock.com/image-photo/speedometer-scoring-high-speed-fast-motion-1061506127");
-    background-repeat: no-repeat, repeat;
-    text-align:center;
-}
+  
+} 

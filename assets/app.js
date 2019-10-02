@@ -1,8 +1,8 @@
 var correct = 0;
 var wrong = 0;
 var skipped = 0;
-var gameTimer = 45;
-var number = 45;
+var gameTimer = 60;
+var number = 60;
 var wins = [];
 var loses = [];
 var clock;
@@ -30,11 +30,7 @@ $(document).ready(function () {
     //}
     // gameTimer = setInterval(function(){ alert("Time up"); }, 60000); 
 
-    // count down timer 
-    number--;
-    $("#timer").html(" " + number + "  " + "seconds")
-    console.log(timer);
-    console.log(number + "test time");
+  
 
 
 
@@ -47,19 +43,19 @@ $(document).ready(function () {
 $(".start").on("click", function () {
     //   $("startgame".hide());
     startGame();
-
     // $("startGame");
     // $("gameQuestoin");
     // $("question");
     // $("countdown");
     // gameQuestion();
     //  question();
-
     console.log("startbutton");
-
-
-
     //   gameQuestion.show;
+      // count down timer 
+      number--;
+      $("#timer").html(" " + number + "  " + "seconds")
+      console.log(timer);
+      console.log(number + "test time");
 
 });
 
@@ -70,17 +66,19 @@ function startGame() {
     $(".gameQuestion").show();
     $("#countdown").show();
     $(".question").show();
+    $("finalCountDown").show();
+    $("number");
     //   gameTimer();
 };
 
 
-
+// when game is completed - show score 
 function done() {
     $("finshed").show();
     $("#wins").text("Correct Answers:" + " " + correct);
-    $("#loses").text("Wrong Answers:" + " " + wrong);
-    console.log(wins + "w");
-    console.log(loses + "L");
+    $("#losses").text("Wrong Answers:" + " " + wrong);
+   // console.log(wins + "w");
+    // console.log(loses + "L");
 };
 
 
@@ -106,15 +104,20 @@ $(".option").change(function () {
     if (correct === 10) {
         console.log("Winner Winner");
         alert("winner winner chicken dinner");
-        done;
+        done();
+        stop();
     } else if
         (wrong === 10) {
         console.log("did you even try");
         alert(" did you even try");
+        done();
+        stop();
     } else if
         (correct + wrong === 10) {
         console.log("gg");
         alert(" game over");
+        done();
+        stop();
     }
 }
   
@@ -128,14 +131,14 @@ $(".option").change(function () {
 //    skipped = (10 - (correct + wrong));
 //    $("done");
 //    });
+
+// game count down 
 function finalCountdown() {
 
-    gameTimer--;
+    gameTimer -- ;
     if (gameTimer >= 0) {
         span = document.getElementById("timer");
         span.innerHTML = gameTimer;
-
-
 
         if (gameTimer === 0) {
             alert('sorry, you lose');
